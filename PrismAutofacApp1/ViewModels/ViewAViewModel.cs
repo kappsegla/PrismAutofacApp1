@@ -7,21 +7,8 @@ using System.Threading.Tasks;
 
 namespace PrismAutofacApp1.ViewModels
 {
-    class ViewAViewModel : INavigationAware
+    public class ViewAViewModel
     {
-        public bool IsNavigationTarget(NavigationContext navigationContext)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void OnNavigatedFrom(NavigationContext navigationContext)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void OnNavigatedTo(NavigationContext navigationContext)
-        {
-            throw new NotImplementedException();
-        }
+  
     }
 }
