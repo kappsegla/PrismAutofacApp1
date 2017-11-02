@@ -4,7 +4,11 @@
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="350" Width="525">
-    <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
-    </Grid>
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button  Content="Add view" Command="{Binding ButtonCommand}"/>
+            <!--<Button  Content="Add view" Command="{Binding ButtonCommand}"/>-->
+        </StackPanel>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+    </DockPanel>
 </Window>

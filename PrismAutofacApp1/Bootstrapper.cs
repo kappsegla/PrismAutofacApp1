@@ -7,6 +7,12 @@ namespace PrismAutofacApp1
 {
     class Bootstrapper : AutofacBootstrapper
     {
+        protected override void ConfigureContainerBuilder(ContainerBuilder builder)
+        {
+            base.ConfigureContainerBuilder(builder);
+            
+            builder.RegisterTypeForNavigation<ViewA>();
+        }
         protected override DependencyObject CreateShell()
         {
             return Container.Resolve<MainWindow>();
