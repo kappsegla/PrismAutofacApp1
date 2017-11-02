@@ -32,11 +32,6 @@ namespace PrismAutofacApp1.ViewModels
 
         private void OnButtonExecute()
         {
-            //Add view with code
-                //var view = _container.Resolve<ViewA>();
-                //IRegion region = _regionManager.Regions["ContentRegion"];
-                //region.Add(view);
-        
             _regionManager.RequestNavigate("ContentRegion", "ViewA");
         }
 

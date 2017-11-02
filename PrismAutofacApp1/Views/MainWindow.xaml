@@ -5,10 +5,10 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="350" Width="525">
     <DockPanel LastChildFill="True">
-        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button  Content="Add view" Command="{Binding ButtonCommand}"/>
+       
+            <Button DockPanel.Dock="Top" Content="Add view" Command="{Binding ButtonCommand}"/>
             <!--<Button  Content="Add view" Command="{Binding ButtonCommand}"/>-->
-        </StackPanel>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+            <ItemsControl DockPanel.Dock="Left" MinWidth="200" prism:RegionManager.RegionName="Navigation" />
+           <ContentControl prism:RegionManager.RegionName="ContentRegion" HorizontalAlignment="Center" VerticalAlignment="Center"  />
     </DockPanel>
 </Window>
