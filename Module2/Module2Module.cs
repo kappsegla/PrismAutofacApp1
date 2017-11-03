@@ -1,22 +1,22 @@
-﻿using Module1.Views;
+﻿using Module2.Views;
 using Prism.Modularity;
 using Prism.Regions;
 using System;
 
-namespace Module1
+namespace Module2
 {
-    public class Module1Module : IModule
+    public class Module2Module : IModule
     {
         IRegionManager _regionManager;
 
-        public Module1Module(IRegionManager regionManager)
+        public Module2Module(IRegionManager regionManager)
         {
             _regionManager = regionManager;
         }
 
         public void Initialize()
         {
-            _regionManager.RegisterViewWithRegion("Navigation", typeof(Module1View) );
+            _regionManager.RegisterViewWithRegion("Navigation", typeof(Module2View));
         }
     }
 }

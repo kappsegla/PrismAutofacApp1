@@ -19,6 +19,7 @@ namespace PrismAutofacApp1
             base.ConfigureContainerBuilder(builder);
 
             builder.RegisterTypeForNavigation<ViewA>("ViewA");
+            builder.RegisterType<Controller>().As<IController>();
         }
 
         protected override DependencyObject CreateShell()
